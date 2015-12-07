@@ -1,0 +1,20 @@
+E:\Mesh-Project\VanGogh\VanGogh\bin\Debug\VanGogh.exe
+E:\Mesh-Project\VanGogh\VanGogh\bin\Debug\VanGogh.pdb
+E:\Mesh-Project\VanGogh\VanGogh\obj\Debug\VanGogh.csprojResolveAssemblyReference.cache
+E:\Mesh-Project\VanGogh\VanGogh\obj\Debug\VanGogh.Properties.Resources.resources
+E:\Mesh-Project\VanGogh\VanGogh\obj\Debug\VanGogh.csproj.GenerateResource.Cache
+E:\Mesh-Project\VanGogh\VanGogh\obj\Debug\VanGogh.exe
+E:\Mesh-Project\VanGogh\VanGogh\obj\Debug\VanGogh.pdb
+E:\Mesh Workspace\VanGogh\VanGogh\obj\Debug\VanGogh.csprojResolveAssemblyReference.cache
+E:\Mesh Workspace\VanGogh\VanGogh\obj\Debug\VanGogh.Properties.Resources.resources
+E:\Mesh Workspace\VanGogh\VanGogh\obj\Debug\VanGogh.csproj.GenerateResource.Cache
+E:\Mesh Workspace\VanGogh\VanGogh\obj\Debug\VanGogh.exe
+E:\Mesh Workspace\VanGogh\VanGogh\obj\Debug\VanGogh.pdb
+E:\Mesh Workspace\VanGogh\VanGogh\bin\Debug\VanGogh.exe
+E:\Mesh Workspace\VanGogh\VanGogh\bin\Debug\VanGogh.pdb
+E:\Mesh Workspace\VanGogh\VanGogh\bin\Debug\BasicComponent.dll
+E:\Mesh Workspace\VanGogh\VanGogh\bin\Debug\DataObject.dll
+E:\Mesh Workspace\VanGogh\VanGogh\bin\Debug\UIComponent.dll
+E:\Mesh Workspace\VanGogh\VanGogh\bin\Debug\BasicComponent.pdb
+E:\Mesh Workspace\VanGogh\VanGogh\bin\Debug\DataObject.pdb
+E:\Mesh Workspace\VanGogh\VanGogh\bin\Debug\UIComponent.pdb
