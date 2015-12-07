@@ -33,6 +33,7 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // button1
@@ -77,11 +78,19 @@
             this.textBox3.Size = new System.Drawing.Size(429, 95);
             this.textBox3.TabIndex = 4;
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(339, 348);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 597);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.webBrowser1);
@@ -101,6 +110,7 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

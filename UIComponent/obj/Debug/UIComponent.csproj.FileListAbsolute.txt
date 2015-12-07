@@ -8,3 +8,8 @@ E:\Mesh Workspace\VanGogh\UIComponent\bin\Debug\UIComponent.pdb
 E:\Mesh Workspace\VanGogh\UIComponent\obj\Debug\UIComponent.csprojResolveAssemblyReference.cache
 E:\Mesh Workspace\VanGogh\UIComponent\obj\Debug\UIComponent.dll
 E:\Mesh Workspace\VanGogh\UIComponent\obj\Debug\UIComponent.pdb
+E:\Mesh Workspace\VanGoghPOS\UIComponent\bin\Debug\UIComponent.dll
+E:\Mesh Workspace\VanGoghPOS\UIComponent\bin\Debug\UIComponent.pdb
+E:\Mesh Workspace\VanGoghPOS\UIComponent\obj\Debug\UIComponent.csprojResolveAssemblyReference.cache
+E:\Mesh Workspace\VanGoghPOS\UIComponent\obj\Debug\UIComponent.dll
+E:\Mesh Workspace\VanGoghPOS\UIComponent\obj\Debug\UIComponent.pdb

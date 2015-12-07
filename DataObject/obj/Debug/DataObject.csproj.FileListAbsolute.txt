@@ -12,3 +12,10 @@ E:\Mesh Workspace\VanGogh\DataObject\bin\Debug\BasicComponent.pdb
 E:\Mesh Workspace\VanGogh\DataObject\obj\Debug\DataObject.csprojResolveAssemblyReference.cache
 E:\Mesh Workspace\VanGogh\DataObject\obj\Debug\DataObject.dll
 E:\Mesh Workspace\VanGogh\DataObject\obj\Debug\DataObject.pdb
+E:\Mesh Workspace\VanGoghPOS\DataObject\bin\Debug\DataObject.dll
+E:\Mesh Workspace\VanGoghPOS\DataObject\bin\Debug\DataObject.pdb
+E:\Mesh Workspace\VanGoghPOS\DataObject\bin\Debug\BasicComponent.dll
+E:\Mesh Workspace\VanGoghPOS\DataObject\bin\Debug\BasicComponent.pdb
+E:\Mesh Workspace\VanGoghPOS\DataObject\obj\Debug\DataObject.csprojResolveAssemblyReference.cache
+E:\Mesh Workspace\VanGoghPOS\DataObject\obj\Debug\DataObject.dll
+E:\Mesh Workspace\VanGoghPOS\DataObject\obj\Debug\DataObject.pdb

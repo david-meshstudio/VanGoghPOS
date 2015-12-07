@@ -1,4 +1,4 @@
-﻿namespace VanGogh
+﻿namespace Vangogh
 {
     partial class Form1
     {

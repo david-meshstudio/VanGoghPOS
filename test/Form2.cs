@@ -22,11 +22,11 @@ namespace test
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            CategoryArea ca = new CategoryArea(250, 250);
+            AreaCategory ca = new AreaCategory(250, 250);
             ca.Location = new Point(10, 10);
             ca.callBack = MessageCallBack;
             List<Category> categoryList = new List<Category>();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 100; i++)
             {
                 Category cate = new Category();
                 cate.ID = i;

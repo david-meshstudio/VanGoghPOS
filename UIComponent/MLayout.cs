@@ -90,5 +90,69 @@ namespace COM.MeshStudio.Lib.UIComponent
                 }
             }
         }
+
+        public static List<Panel> HorizentalLayoutInPanelList(Control mother, List<Control> sonList)
+        {
+            List<Panel> result = new List<Panel>();
+            int width = mother.Width;
+            int x = 0;
+            int y = 0;
+            int maxHeight = 0;
+            Panel cp = new Panel();
+            cp.Width = mother.Width;
+            cp.Height = mother.Height;
+            foreach (Control son in sonList)
+            {
+                if (x + son.Width <= width)
+                {
+                    son.Location = new Point(x, y);
+                    cp.Controls.Add(son);
+                    x += son.Width;
+                    maxHeight = Math.Max(maxHeight, son.Height);
+                }
+                else if (x == 0)
+                {
+                    y += son.Height;
+                    if (x == 0 && y + son.Height > cp.Height)
+                    {
+                        result.Add(cp);
+                        cp = new Panel();
+                        cp.Width = mother.Width;
+                        cp.Height = mother.Height;
+                        y = 0;
+                    }
+                    son.Location = new Point(x, y);
+                    cp.Controls.Add(son);
+                }
+                else
+                {
+                    x = 0;
+                    y += maxHeight;
+                    if (x == 0 && y + son.Height > cp.Height)
+                    {
+                        result.Add(cp);
+                        cp = new Panel();
+                        cp.Width = mother.Width;
+                        cp.Height = mother.Height;
+                        y = 0;
+                    }
+                    maxHeight = 0;
+                    son.Location = new Point(x, y);
+                    cp.Controls.Add(son);
+                    if (son.Width <= width)
+                    {
+                        x += son.Width;
+                        maxHeight = Math.Max(maxHeight, son.Height);
+                    }
+                    else
+                    {
+                        y += son.Height;
+                    }
+                }
+            }
+            if (cp.Controls.Count > 0)
+                result.Add(cp);
+            return result;
+        }
     }
 }

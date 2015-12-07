@@ -5,8 +5,13 @@ using System.Text;
 
 namespace Vangogh.DataObject
 {
-    public class Product
+    public class Product : BusinessEntity
     {
-
+        public Product()
+        {
+            this.ID = 0;
+            this.SN = "";
+            this.Name = "";
+        }
     }
 }
