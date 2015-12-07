@@ -1,0 +1,10 @@
+E:\Mesh-Project\VanGogh\BasicComponent\bin\Debug\BasicComponent.dll
+E:\Mesh-Project\VanGogh\BasicComponent\bin\Debug\BasicComponent.pdb
+E:\Mesh-Project\VanGogh\BasicComponent\obj\Debug\BasicComponent.dll
+E:\Mesh-Project\VanGogh\BasicComponent\obj\Debug\BasicComponent.pdb
+E:\Mesh-Project\VanGogh\BasicComponent\obj\Debug\BasicComponent.csprojResolveAssemblyReference.cache
+E:\Mesh Workspace\VanGogh\BasicComponent\bin\Debug\BasicComponent.dll
+E:\Mesh Workspace\VanGogh\BasicComponent\bin\Debug\BasicComponent.pdb
+E:\Mesh Workspace\VanGogh\BasicComponent\obj\Debug\BasicComponent.csprojResolveAssemblyReference.cache
+E:\Mesh Workspace\VanGogh\BasicComponent\obj\Debug\BasicComponent.dll
+E:\Mesh Workspace\VanGogh\BasicComponent\obj\Debug\BasicComponent.pdb

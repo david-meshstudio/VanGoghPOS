@@ -1,0 +1,10 @@
+E:\Mesh-Project\VanGogh\UIComponent\bin\Debug\UIComponent.dll
+E:\Mesh-Project\VanGogh\UIComponent\bin\Debug\UIComponent.pdb
+E:\Mesh-Project\VanGogh\UIComponent\obj\Debug\UIComponent.csprojResolveAssemblyReference.cache
+E:\Mesh-Project\VanGogh\UIComponent\obj\Debug\UIComponent.dll
+E:\Mesh-Project\VanGogh\UIComponent\obj\Debug\UIComponent.pdb
+E:\Mesh Workspace\VanGogh\UIComponent\bin\Debug\UIComponent.dll
+E:\Mesh Workspace\VanGogh\UIComponent\bin\Debug\UIComponent.pdb
+E:\Mesh Workspace\VanGogh\UIComponent\obj\Debug\UIComponent.csprojResolveAssemblyReference.cache
+E:\Mesh Workspace\VanGogh\UIComponent\obj\Debug\UIComponent.dll
+E:\Mesh Workspace\VanGogh\UIComponent\obj\Debug\UIComponent.pdb

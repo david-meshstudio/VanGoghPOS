@@ -1,0 +1,30 @@
+E:\Mesh-Project\VanGogh\test\bin\Debug\test.exe
+E:\Mesh-Project\VanGogh\test\bin\Debug\test.pdb
+E:\Mesh-Project\VanGogh\test\bin\Debug\BasicComponent.dll
+E:\Mesh-Project\VanGogh\test\bin\Debug\BasicComponent.pdb
+E:\Mesh-Project\VanGogh\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+E:\Mesh-Project\VanGogh\test\obj\Debug\test.Form1.resources
+E:\Mesh-Project\VanGogh\test\obj\Debug\test.Properties.Resources.resources
+E:\Mesh-Project\VanGogh\test\obj\Debug\test.csproj.GenerateResource.Cache
+E:\Mesh-Project\VanGogh\test\obj\Debug\test.exe
+E:\Mesh-Project\VanGogh\test\obj\Debug\test.pdb
+E:\Mesh-Project\VanGogh\test\bin\Debug\UIComponent.dll
+E:\Mesh-Project\VanGogh\test\bin\Debug\UIComponent.pdb
+E:\Mesh-Project\VanGogh\test\obj\Debug\test.Form2.resources
+E:\Mesh Workspace\VanGogh\test\obj\Debug\test.exe
+E:\Mesh Workspace\VanGogh\test\obj\Debug\test.pdb
+E:\Mesh Workspace\VanGogh\test\bin\Debug\test.exe
+E:\Mesh Workspace\VanGogh\test\bin\Debug\test.pdb
+E:\Mesh Workspace\VanGogh\test\bin\Debug\BasicComponent.dll
+E:\Mesh Workspace\VanGogh\test\bin\Debug\UIComponent.dll
+E:\Mesh Workspace\VanGogh\test\bin\Debug\BasicComponent.pdb
+E:\Mesh Workspace\VanGogh\test\bin\Debug\UIComponent.pdb
+E:\Mesh Workspace\VanGogh\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+E:\Mesh Workspace\VanGogh\test\obj\Debug\test.Form1.resources
+E:\Mesh Workspace\VanGogh\test\obj\Debug\test.Form2.resources
+E:\Mesh Workspace\VanGogh\test\obj\Debug\test.Properties.Resources.resources
+E:\Mesh Workspace\VanGogh\test\obj\Debug\test.csproj.GenerateResource.Cache
+E:\Mesh Workspace\VanGogh\test\bin\Debug\DataObject.dll
+E:\Mesh Workspace\VanGogh\test\bin\Debug\VanGogh.exe
+E:\Mesh Workspace\VanGogh\test\bin\Debug\DataObject.pdb
+E:\Mesh Workspace\VanGogh\test\bin\Debug\VanGogh.pdb
