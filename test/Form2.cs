@@ -15,6 +15,8 @@ namespace test
 {
     public partial class Form2 : Form
     {
+        private MWorker mworker;
+
         public Form2()
         {
             InitializeComponent();
@@ -22,6 +24,8 @@ namespace test
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            mworker = new MWorker(4);
+            mworker.WorkerJobDone = WorkerJobDone;
             AreaCategory ca = new AreaCategory(250, 250);
             ca.Location = new Point(10, 10);
             ca.callBack = MessageCallBack;
@@ -42,6 +46,13 @@ namespace test
         }
 
         private void MessageCallBack(string message)
+        {
+            MWorker.MJob mjob = new MWorker.MJob();
+            mjob.id = "Hello";
+            mworker.AddJob(JsonTool.JSON_Encode_Object(new List<object>() { mjob }));
+        }
+
+        private void WorkerJobDone(string message)
         {
             MessageBox.Show(message);
         }

@@ -46,7 +46,17 @@
     </Compile>
     <Compile Include="MLayout.cs" />
     <Compile Include="MStyle.cs" />
+    <Compile Include="MWorker.cs" />
+    <Compile Include="PagerDisplayBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BasicComponent\BasicComponent.csproj">
+      <Project>{7b296efb-b920-4731-b897-e1fd45927848}</Project>
+      <Name>BasicComponent</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

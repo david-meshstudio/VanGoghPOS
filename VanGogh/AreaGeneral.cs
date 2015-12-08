@@ -15,6 +15,7 @@ namespace Vangogh
         public MessageCallBack callBack;
         public Panel DisplayArea;
         public Panel ControlPanel;
+        private PagerDisplayBar pdb;
         public int currnetPage = 0, maxPage = 0, controlWidth = 40;
         public List<Panel> pList = new List<Panel>() { new Panel() };
 
@@ -68,51 +69,50 @@ namespace Vangogh
             pList = MLayout.HorizentalLayoutInPanelList(DisplayArea, mbuttonList);
             DisplayArea.Controls.Add(pList[0]);
             maxPage = pList.Count - 1;
+            pdb.RefreshMaxPage(maxPage);
         }
 
         public void InitControl()
         {
-            int height = this.Height / 4;
+            //int height = this.Height / 4;
+            int width = Math.Min(this.Height / 6, controlWidth);
             List<Control> cbList = new List<Control>();
             for (int i = 0; i < 4; i++)
             {
                 MButton cb = new MButton();
-                cb.Width = controlWidth;
-                cb.Height = height;
+                cb.Width = width;
+                cb.Height = width;
                 cb.MessageName = "cb" + i.ToString();
                 cb.callBack = CBClick;
                 cbList.Add(cb);
             }
+            pdb = new PagerDisplayBar(width, this.Height - 4 * width, 2);
+            cbList.Insert(2, pdb);
             MLayout.VerticalLayout(ControlPanel, cbList);
         }
 
         private void CBClick(string message)
         {
+            DisplayArea.Controls.Clear();
             switch (message)
             {
                 case "cb0":
-                    DisplayArea.Controls.Clear();
                     currnetPage = 0;
-                    DisplayArea.Controls.Add(pList[currnetPage]);
                     break;
                 case "cb1":
-                    DisplayArea.Controls.Clear();
                     currnetPage = currnetPage > 0 ? currnetPage - 1 : 0;
-                    DisplayArea.Controls.Add(pList[currnetPage]);
                     break;
                 case "cb2":
-                    DisplayArea.Controls.Clear();
                     currnetPage = currnetPage < maxPage ? currnetPage + 1 : maxPage;
-                    DisplayArea.Controls.Add(pList[currnetPage]);
                     break;
                 case "cb3":
-                    DisplayArea.Controls.Clear();
                     currnetPage = maxPage;
-                    DisplayArea.Controls.Add(pList[currnetPage]);
                     break;
                 default:
                     break;
             }
+            DisplayArea.Controls.Add(pList[currnetPage]);
+            pdb.ShowCurrentPage(currnetPage);
         }
     }
 }
