@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel;
 using COM.MeshStudio.Lib.BasicComponent;
+using System.Windows.Forms;
 
 namespace COM.MeshStudio.Lib.UIComponent
 {
@@ -13,9 +14,14 @@ namespace COM.MeshStudio.Lib.UIComponent
         public delegate void JobDoneMethod(string message);
         public JobDoneMethod WorkerJobDone;
         public Queue<MJob> JobQueue = new Queue<MJob>();
+        private Timer timer;
 
         public MWorker(int number)
         {
+            timer = new Timer();
+            timer.Interval = 60 * 1000;
+            timer.Tick += timer_Tick;
+            timer.Start();
             for (int i = 0; i < number; i++)
             {
                 BackgroundWorker bw = new BackgroundWorker();
@@ -67,6 +73,16 @@ namespace COM.MeshStudio.Lib.UIComponent
                         e.Result = APIAdaptor.CallAPIByFunction(mjob.task, mjob.parameter);
                         break;
                     case "FILE":
+                        if (mjob.task == "read")
+                        {
+                            e.Result = FileAdaptor.ReadFile(mjob.parameter);
+                        }
+                        else if (mjob.task == "write")
+                        {
+                            string[] paras = mjob.parameter.Split(new char[] { ',' });
+                            FileAdaptor.WriteFile(paras[0], paras[1]);
+                            e.Result = "OK";
+                        }
                         break;
                     case "DEVICE":
                         break;
@@ -79,6 +95,7 @@ namespace COM.MeshStudio.Lib.UIComponent
             catch(Exception exp)
             {
                 e.Result = exp.ToString();
+
             }
         }
 
@@ -90,6 +107,11 @@ namespace COM.MeshStudio.Lib.UIComponent
                 MJob jobNext = JobQueue.Dequeue();
                 ((BackgroundWorker)sender).RunWorkerAsync(jobNext);
             }
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            long ts = BasicTool.GetCurrentTimestampLong();
         }
 
         public class MJob

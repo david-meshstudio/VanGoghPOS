@@ -74,7 +74,6 @@ namespace Vangogh
 
         public void InitControl()
         {
-            //int height = this.Height / 4;
             int width = Math.Min(this.Height / 6, controlWidth);
             List<Control> cbList = new List<Control>();
             for (int i = 0; i < 4; i++)

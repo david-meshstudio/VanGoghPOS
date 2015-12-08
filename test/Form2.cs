@@ -60,5 +60,10 @@ namespace test
         {
             MessageBox.Show(message);
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
