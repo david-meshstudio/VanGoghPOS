@@ -30,11 +30,12 @@ namespace test
             ca.Location = new Point(10, 10);
             ca.callBack = MessageCallBack;
             List<Category> categoryList = new List<Category>();
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 500; i++)
             {
                 Category cate = new Category();
                 cate.ID = i;
                 cate.Name = "Cat" + i;
+                cate.SN = "C" + i.ToString().PadLeft(6, '0');
                 categoryList.Add(cate);
             }
             string clstr = JsonTool.JSON_Encode_Object(categoryList.ToList<object>());
@@ -49,6 +50,9 @@ namespace test
         {
             MWorker.MJob mjob = new MWorker.MJob();
             mjob.id = "Hello";
+            mjob.type = "API";
+            mjob.task = "test";
+            mjob.parameter = message;
             mworker.AddJob(JsonTool.JSON_Encode_Object(new List<object>() { mjob }));
         }
 

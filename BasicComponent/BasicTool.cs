@@ -32,9 +32,23 @@ namespace COM.MeshStudio.Lib.BasicComponent
             return strPath;
         }
 
+        public static string Base64_Encode(byte[] bytedata)
+        {
+            string strPath = Convert.ToBase64String(bytedata);
+            return strPath;
+        }
+
         public static string Base64_Encode_Urlsafe(string str)
         {
             string result = Base64_Encode(str);
+            result = result.Replace('+', '-');
+            result = result.Replace('/', '_');
+            return result;
+        }
+
+        public static string Base64_Encode_Urlsafe(byte[] bytedata)
+        {
+            string result = Base64_Encode(bytedata);
             result = result.Replace('+', '-');
             result = result.Replace('/', '_');
             return result;
@@ -47,11 +61,25 @@ namespace COM.MeshStudio.Lib.BasicComponent
             return orgStr;
         }
 
+        public static string Base64_Decode(byte[] bytedata)
+        {
+            string orgStr = Encoding.UTF8.GetString(bytedata);
+            return orgStr;
+        }
+
         public static string Base64_Decode_Urlsafe(string str)
         {
             str = str.Replace('-', '+');
             str = str.Replace('/', '_');
             return Base64_Decode(str);
+        }
+
+        public static string Base64_Decode_Urlsafe(byte[] bytedata)
+        {
+            string str = Encoding.UTF8.GetString(bytedata);
+            str = str.Replace('-', '+');
+            str = str.Replace('/', '_');
+            return Base64_Decode(bytedata);
         }
     }
 }

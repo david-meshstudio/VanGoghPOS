@@ -60,7 +60,21 @@ namespace COM.MeshStudio.Lib.UIComponent
         {
             try
             {
-                e.Result = ((MJob)e.Argument).id;
+                MJob mjob = (MJob)e.Argument;
+                switch(mjob.type)
+                {
+                    case "API":
+                        e.Result = APIAdaptor.CallAPIByFunction(mjob.task, mjob.parameter);
+                        break;
+                    case "FILE":
+                        break;
+                    case "DEVICE":
+                        break;
+                    default:
+                        string jobString = JsonTool.JSON_Encode_Object(new List<object>() { mjob });
+                        e.Result = "NoMatchJobType:" + jobString;
+                        break;
+                }
             }
             catch(Exception exp)
             {

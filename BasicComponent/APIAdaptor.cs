@@ -16,18 +16,40 @@ namespace COM.MeshStudio.Lib.BasicComponent
 
         }
 
-        public static string CallAPIByFunction(string functionName, Dictionary<string, string> parameter)
+        private static string GetPostString(string parameter)
+        {
+            string ret = EncryptTool.encrypt(parameter, "key", "20140417161616");
+            byte[] retbyte = CompressionTool.GZipCompress(Encoding.UTF8.GetBytes(ret));
+            string result = BasicTool.Base64_Encode_Urlsafe(retbyte);
+            return result;
+        }
+
+        private static string GetResponseString(string response)
+        {
+            string res = BasicTool.Base64_Decode_Urlsafe(response);
+            byte[] ret = CompressionTool.GZipDecompress(Encoding.UTF8.GetBytes(res));
+            string retstr = Encoding.UTF8.GetString(ret);
+            string result = EncryptTool.decrypt(retstr, "key", "20140417161616");
+            return result;
+        }
+
+        public static string CallAPIByFunction(string functionName, string parameter)
         {
             string result = "";
             string uri = Configuration.GetAPIURI(functionName);
             if (uri != "")
             {
-                string url = URL_HEAD + Configuration.AppName + "/" + uri;
+                //string url = URL_HEAD + Configuration.AppName + "/" + uri;
+                string url = uri;
                 // Add Sign
-                Dictionary<string, string> para = BasicTool.CloneMap(parameter);
+                Dictionary<string, string> para = new Dictionary<string, string>();
                 para.Add("token", Configuration.Token);
                 para.Add("timestamp", BasicTool.GetCurrentTimestamp());
+                para.Add("sing", "");
+                parameter = GetPostString(parameter);
+                para.Add("parameter", parameter);
                 result = RawPostRequest(url, para);
+                //result = GetResponseString(result);
             }
             return result;
         }

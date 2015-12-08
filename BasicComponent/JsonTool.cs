@@ -225,7 +225,7 @@ namespace COM.MeshStudio.Lib.BasicComponent
                 else
                 {
                     FieldInfo fi = referObject.GetType().GetField(kv.Key);
-                    fi.SetValue(result, Convert.ChangeType(vResult, fi.FieldType));
+                    if(fi != null) fi.SetValue(result, Convert.ChangeType(vResult, fi.FieldType));
                 }
             }
             return result;

@@ -14,7 +14,7 @@ namespace Vangogh.DataObject
         {
             Dictionary<string, string> result = new Dictionary<string, string>();
             result.Add("Text", Name);
-            result.Add("MessageName", Name + "," + ID);
+            result.Add("MessageName", SN + "|" + ID);
             return result;
         }
     }
