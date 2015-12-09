@@ -105,7 +105,15 @@ namespace test
         private void button2_Click(object sender, EventArgs e)
         {
             //BasicTool.CallScreenKeyboard();
-            CloudStorageTool.QiniuPutFile(@"E:\21C-120140909152845~1.jpg");
+            //CloudStorageTool.QiniuPutFile(@"E:\21C-120140909152845~1.jpg");
+            LogTool.AddDebugLog("hello world");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            string fileName = openFileDialog1.FileName;
+            MessageBox.Show(FileAdaptor.ReadFile(fileName));
         }
     }
 }

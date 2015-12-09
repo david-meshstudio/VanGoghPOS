@@ -5,12 +5,14 @@ using System.Text;
 using Qiniu.IO;
 using Qiniu.RS;
 using Qiniu.Util;
+using System.Net;
+using System.IO;
 
 namespace COM.MeshStudio.Lib.BasicComponent
 {
     public class CloudStorageTool
     {
-        protected static string Bucket = "vangogh";
+        private static string Bucket = "vangogh";
 
         public static void QiniuPutFile(string fileName)
         {
@@ -27,6 +29,33 @@ namespace COM.MeshStudio.Lib.BasicComponent
             string[] fnps = fileName.Split(new char[] { '\\' });
             string key = fnps[fnps.Length - 1];
             PutRet ret = target.PutFile(put.Token(), key, fileName, extra);
+        }
+
+        public static void QiniuGetFile(string fileName)
+        {
+            string[] fnps = fileName.Split(new char[] { '\\' });
+            string key = fnps[fnps.Length - 1];
+            string path = fileName.Replace(key,"");
+            //if (File.Exists(fileName)) fileName = path + "new_" + key;
+            string url = @"http://7xo64k.com2.z0.glb.qiniucdn.com/" + key;
+            try
+            {
+                WebRequest wReq = WebRequest.Create(url);
+                WebResponse wResp = wReq.GetResponse();
+                Stream respStream = wResp.GetResponseStream();
+                FileStream fs = new FileStream(fileName, FileMode.Create);
+                while (true)
+                {
+                    int res = respStream.ReadByte();
+                    if (res < 0) break;
+                    fs.WriteByte((byte)res);
+                }
+                fs.Close();
+            }
+            catch (System.Exception ex)
+            {
+                //errorMsg = ex.Message;
+            }
         }
 
     }

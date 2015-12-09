@@ -34,5 +34,3 @@ E:\Mesh Workspace\VanGoghPOS\VanGogh\bin\Debug\UIComponent.pdb
 E:\Mesh Workspace\VanGoghPOS\VanGogh\obj\Debug\Vangogh.Form1.resources
 E:\Mesh Workspace\VanGoghPOS\VanGogh\bin\Debug\Qiniu.4.0.dll
 E:\Mesh Workspace\VanGoghPOS\VanGogh\bin\Debug\Newtonsoft.Json.dll
-E:\Mesh Workspace\VanGoghPOS\VanGogh\bin\Debug\Newtonsoft.Json.pdb
-E:\Mesh Workspace\VanGoghPOS\VanGogh\bin\Debug\Newtonsoft.Json.xml

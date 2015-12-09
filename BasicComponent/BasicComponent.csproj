@@ -56,6 +56,7 @@
     <Compile Include="EncryptTool.cs" />
     <Compile Include="FileAdaptor.cs" />
     <Compile Include="JsonTool.cs" />
+    <Compile Include="LogTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SocketTool.cs" />
     <Compile Include="WinMessageTool.cs" />

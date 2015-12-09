@@ -28,5 +28,15 @@ namespace COM.MeshStudio.Lib.BasicComponent
             fs.Write(resbyte, 0, resbyte.Length);
             fs.Close();
         }
+
+        public static void AppendFile(string fileName, string contentString)
+        {
+            contentString = "\n\r" + contentString;
+            string result = EncryptTool.encrypt(contentString, "key", "20151207155900");
+            byte[] resbyte = CompressionTool.GZipCompress(Encoding.UTF8.GetBytes(result));
+            FileStream fs = new FileStream(fileName, FileMode.Append);
+            fs.Write(resbyte, 0, resbyte.Length);
+            fs.Close();
+        }
     }
 }
