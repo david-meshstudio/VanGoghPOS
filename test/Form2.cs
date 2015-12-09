@@ -59,10 +59,6 @@ namespace test
                     cdata = (WinMessageTool.COPYDATASTRUCT)m.GetLParam(cdata.GetType());
                     string message = cdata.lpData;
                     break;
-                case 0x0010:
-                    server.Stop();
-                    base.DefWndProc(ref m);
-                    break;
                 default:
                     base.DefWndProc(ref m);
                     break;
@@ -97,6 +93,11 @@ namespace test
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            server.Stop();
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
             server.Stop();
         }

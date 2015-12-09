@@ -91,6 +91,16 @@ namespace COM.MeshStudio.Lib.BasicComponent
                     client.Send(Encoding.UTF8.GetBytes("close"));
                     client.Close();
                 }
+                else if (message == "clientClose")
+                {
+                    if (clientList.ContainsValue(client))
+                    {
+                        int index = clientList.Values.ToList<Socket>().IndexOf(client);
+                        string key = clientList.Keys.ToList<string>()[index];
+                        clientList.Remove(key);
+                    }
+                    client.Close();
+                }
                 else if (message.StartsWith("register"))
                 {
                     string[] msgs = message.Split(new char[] { '|' });
@@ -178,6 +188,12 @@ namespace COM.MeshStudio.Lib.BasicComponent
                 {
 
                 }
+            }
+
+            public void Stop()
+            {
+                SendMessage("clientClose");
+                socket.Close();
             }
         }
 

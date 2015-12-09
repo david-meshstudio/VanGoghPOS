@@ -45,9 +45,6 @@ namespace Vangogh
                     this.ShowInTaskbar = true;
                     notifyIcon1.Visible = false;
                     break;
-                case 0x0010:
-                    base.DefWndProc(ref m);
-                    break;
                 default:
                     base.DefWndProc(ref m);
                     break;
@@ -78,6 +75,11 @@ namespace Vangogh
         private void button1_Click(object sender, EventArgs e)
         {
             socket.SendMessage(textBox1.Text);
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            socket.Stop();
         }
     }
 }
