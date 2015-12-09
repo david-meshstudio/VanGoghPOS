@@ -33,6 +33,14 @@ namespace COM.MeshStudio.Lib.BasicComponent
             return intResult;
         }
 
+        public static long GetTimestampLongAfterNSeconds(long n)
+        {
+            long intResult = 0;
+            DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1));
+            intResult = (long)(DateTime.Now - startTime).TotalSeconds + n;
+            return intResult;
+        }
+
         public static string Base64_Encode(string str)
         {
             byte[] bytedata = Encoding.UTF8.GetBytes(str);

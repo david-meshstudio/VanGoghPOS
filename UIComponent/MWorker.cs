@@ -14,6 +14,7 @@ namespace COM.MeshStudio.Lib.UIComponent
         public delegate void JobDoneMethod(string message);
         public JobDoneMethod WorkerJobDone;
         public Queue<MJob> JobQueue = new Queue<MJob>();
+        public Dictionary<long, List<MJob>> TimerJobQueue = new Dictionary<long, List<MJob>>();
         private Timer timer;
 
         public MWorker(int number)
@@ -36,14 +37,35 @@ namespace COM.MeshStudio.Lib.UIComponent
             List<object> jobList = JsonTool.JSON_Decode_Object(jobstr, new List<object>() { new MJob() });
             foreach(var job in jobList)
             {
+                MJob mjob = (MJob)job;
+                AddJob(mjob);
+            }
+        }
+
+        private void AddJob(MJob mjob)
+        {
+            if (mjob.startTime == 0)
+            {
                 BackgroundWorker cw = getAvailableWorker();
-                if(cw == null)
+                if (cw == null)
                 {
-                    JobQueue.Enqueue((MJob)job);
+                    JobQueue.Enqueue(mjob);
                 }
                 else
                 {
-                    cw.RunWorkerAsync((MJob)job);
+                    cw.RunWorkerAsync(mjob);
+                }
+            }
+            else
+            {
+                long startTime = mjob.startTime;
+                if (TimerJobQueue.Keys.Contains<long>(startTime))
+                {
+                    TimerJobQueue[startTime].Add(mjob);
+                }
+                else
+                {
+                    TimerJobQueue.Add(startTime, new List<MJob>() { mjob });
                 }
             }
         }
@@ -102,7 +124,7 @@ namespace COM.MeshStudio.Lib.UIComponent
         private void worker_DoCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             WorkerJobDone(e.Result.ToString());
-            if(JobQueue.Count > 0)
+            if (JobQueue.Count > 0)
             {
                 MJob jobNext = JobQueue.Dequeue();
                 ((BackgroundWorker)sender).RunWorkerAsync(jobNext);
@@ -112,11 +134,31 @@ namespace COM.MeshStudio.Lib.UIComponent
         private void timer_Tick(object sender, EventArgs e)
         {
             long ts = BasicTool.GetCurrentTimestampLong();
+            List<long> keyList = TimerJobQueue.Keys.ToList<long>();
+            keyList.Sort();
+            foreach(long startTime in keyList)
+            {
+                if(startTime <= ts)
+                {
+                    List<MJob> mjobList = TimerJobQueue[startTime];
+                    TimerJobQueue.Remove(startTime);
+                    foreach(MJob mjob in mjobList)
+                    {
+                        mjob.startTime = 0;
+                        AddJob(mjob);
+                    }
+                }
+                else
+                {
+                    break;
+                }
+            }
         }
 
         public class MJob
         {
             public string id = "", type = "", task = "", parameter = "";
+            public long startTime = 0;
         }
     }
 }

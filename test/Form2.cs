@@ -44,6 +44,9 @@ namespace test
             List<object> list = JsonTool.JSON_Decode_Object(clstr2, new List<object>() { new Category() });
             ca.Init(list);
             this.Controls.Add(ca);
+            SocketTool.MServerSocket server = SocketTool.FactoryGenerateServerTCPSocket();
+            server.receiveCallBack = SocketCallBack;
+            server.Listen("127.0.0.1", 8885, 10);
         }
 
         private void MessageCallBack(string message)
@@ -53,17 +56,23 @@ namespace test
             mjob.type = "API";
             mjob.task = "test";
             mjob.parameter = message;
+            mjob.startTime = BasicTool.GetTimestampLongAfterNSeconds(30);
             mworker.AddJob(JsonTool.JSON_Encode_Object(new List<object>() { mjob }));
         }
 
         private void WorkerJobDone(string message)
         {
-            MessageBox.Show(message);
+            WinMessageTool.SendMessage("Main", message);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
 
+        }
+
+        private void SocketCallBack(string message)
+        {
+            MessageBox.Show(message);
         }
     }
 }

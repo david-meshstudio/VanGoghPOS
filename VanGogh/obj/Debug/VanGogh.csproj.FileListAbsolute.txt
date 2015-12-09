@@ -31,3 +31,4 @@ E:\Mesh Workspace\VanGoghPOS\VanGogh\bin\Debug\UIComponent.dll
 E:\Mesh Workspace\VanGoghPOS\VanGogh\bin\Debug\BasicComponent.pdb
 E:\Mesh Workspace\VanGoghPOS\VanGogh\bin\Debug\DataObject.pdb
 E:\Mesh Workspace\VanGoghPOS\VanGogh\bin\Debug\UIComponent.pdb
+E:\Mesh Workspace\VanGoghPOS\VanGogh\obj\Debug\Vangogh.Form1.resources
