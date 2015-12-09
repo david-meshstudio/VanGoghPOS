@@ -10,7 +10,7 @@ namespace Vangogh
     {
         public static void SelfControlMessage(string message)
         {
-
+            MessageBox.Show(message);
         }
 
         public static void WindowsMessage(Form1 f, string message)

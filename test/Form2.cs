@@ -16,6 +16,7 @@ namespace test
     public partial class Form2 : Form
     {
         private MWorker mworker;
+        private SocketTool.MServerSocket server;
 
         public Form2()
         {
@@ -44,9 +45,28 @@ namespace test
             List<object> list = JsonTool.JSON_Decode_Object(clstr2, new List<object>() { new Category() });
             ca.Init(list);
             this.Controls.Add(ca);
-            SocketTool.MServerSocket server = SocketTool.FactoryGenerateServerTCPSocket();
+            server = SocketTool.FactoryGenerateServerTCPSocket();
             server.receiveCallBack = SocketCallBack;
             server.Listen("127.0.0.1", 8885, 10);
+        }
+
+        protected override void DefWndProc(ref Message m)
+        {
+            switch (m.Msg)
+            {
+                case WinMessageTool.WM_COPYDATA:
+                    WinMessageTool.COPYDATASTRUCT cdata = new WinMessageTool.COPYDATASTRUCT();
+                    cdata = (WinMessageTool.COPYDATASTRUCT)m.GetLParam(cdata.GetType());
+                    string message = cdata.lpData;
+                    break;
+                case 0x0010:
+                    server.Stop();
+                    base.DefWndProc(ref m);
+                    break;
+                default:
+                    base.DefWndProc(ref m);
+                    break;
+            }
         }
 
         private void MessageCallBack(string message)
@@ -73,6 +93,12 @@ namespace test
         private void SocketCallBack(string message)
         {
             MessageBox.Show(message);
+            server.SendMessage("test", "You're Welcome!");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            server.Stop();
         }
     }
 }

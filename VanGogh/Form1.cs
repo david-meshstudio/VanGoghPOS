@@ -14,12 +14,16 @@ namespace Vangogh
     {
         ContextMenu notifyContextMenu = new ContextMenu();
         Icon ico = new Icon("vangogh.ico");
+        SocketTool.MClientSocket socket;
 
         public Form1()
         {
             InitializeComponent();
             this.Text = "Main";
             notifyIcon1.Text = "VanGoghPOS";
+            socket = SocketTool.FactoryGenerateClientTCPSocket("test");
+            socket.receiveCallBack = ControlMessageCallBack;
+            socket.Connect("127.0.0.1", 8885);
         }
 
         private void ControlMessageCallBack(string message)
@@ -40,6 +44,9 @@ namespace Vangogh
                     this.Activate();
                     this.ShowInTaskbar = true;
                     notifyIcon1.Visible = false;
+                    break;
+                case 0x0010:
+                    base.DefWndProc(ref m);
                     break;
                 default:
                     base.DefWndProc(ref m);
@@ -70,9 +77,6 @@ namespace Vangogh
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SocketTool.MClientSocket socket = SocketTool.FactoryGenerateClientTCPSocket("test");
-            socket.receiveCallBack = ControlMessageCallBack;
-            socket.Connect("127.0.0.1", 8885);
             socket.SendMessage(textBox1.Text);
         }
     }
