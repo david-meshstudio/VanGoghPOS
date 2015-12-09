@@ -101,5 +101,11 @@ namespace test
         {
             server.Stop();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //BasicTool.CallScreenKeyboard();
+            CloudStorageTool.QiniuPutFile(@"E:\21C-120140909152845~1.jpg");
+        }
     }
 }

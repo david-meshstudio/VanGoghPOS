@@ -15,3 +15,7 @@ E:\Mesh Workspace\VanGoghPOS\UIComponent\obj\Debug\UIComponent.dll
 E:\Mesh Workspace\VanGoghPOS\UIComponent\obj\Debug\UIComponent.pdb
 E:\Mesh Workspace\VanGoghPOS\UIComponent\bin\Debug\BasicComponent.dll
 E:\Mesh Workspace\VanGoghPOS\UIComponent\bin\Debug\BasicComponent.pdb
+E:\Mesh Workspace\VanGoghPOS\UIComponent\bin\Debug\Qiniu.4.0.dll
+E:\Mesh Workspace\VanGoghPOS\UIComponent\bin\Debug\Newtonsoft.Json.dll
+E:\Mesh Workspace\VanGoghPOS\UIComponent\bin\Debug\Newtonsoft.Json.pdb
+E:\Mesh Workspace\VanGoghPOS\UIComponent\bin\Debug\Newtonsoft.Json.xml

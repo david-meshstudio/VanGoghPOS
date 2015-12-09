@@ -97,5 +97,10 @@ namespace COM.MeshStudio.Lib.BasicComponent
             str = str.Replace('/', '_');
             return Base64_Decode(bytedata);
         }
+
+        public static void CallScreenKeyboard()
+        {
+            System.Diagnostics.Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.System) + @"\osk.exe");
+        }
     }
 }

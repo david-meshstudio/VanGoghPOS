@@ -13,3 +13,5 @@ E:\Mesh Workspace\VanGoghPOS\BasicComponent\bin\Debug\BasicComponent.pdb
 E:\Mesh Workspace\VanGoghPOS\BasicComponent\obj\Debug\BasicComponent.csprojResolveAssemblyReference.cache
 E:\Mesh Workspace\VanGoghPOS\BasicComponent\obj\Debug\BasicComponent.dll
 E:\Mesh Workspace\VanGoghPOS\BasicComponent\obj\Debug\BasicComponent.pdb
+E:\Mesh Workspace\VanGoghPOS\BasicComponent\bin\Debug\Newtonsoft.Json.pdb
+E:\Mesh Workspace\VanGoghPOS\BasicComponent\bin\Debug\Newtonsoft.Json.xml

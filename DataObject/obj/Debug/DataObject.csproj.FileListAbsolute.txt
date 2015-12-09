@@ -19,3 +19,7 @@ E:\Mesh Workspace\VanGoghPOS\DataObject\bin\Debug\BasicComponent.pdb
 E:\Mesh Workspace\VanGoghPOS\DataObject\obj\Debug\DataObject.csprojResolveAssemblyReference.cache
 E:\Mesh Workspace\VanGoghPOS\DataObject\obj\Debug\DataObject.dll
 E:\Mesh Workspace\VanGoghPOS\DataObject\obj\Debug\DataObject.pdb
+E:\Mesh Workspace\VanGoghPOS\DataObject\bin\Debug\Qiniu.4.0.dll
+E:\Mesh Workspace\VanGoghPOS\DataObject\bin\Debug\Newtonsoft.Json.dll
+E:\Mesh Workspace\VanGoghPOS\DataObject\bin\Debug\Newtonsoft.Json.pdb
+E:\Mesh Workspace\VanGoghPOS\DataObject\bin\Debug\Newtonsoft.Json.xml

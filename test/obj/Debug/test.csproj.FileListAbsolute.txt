@@ -45,3 +45,7 @@ E:\Mesh Workspace\VanGoghPOS\test\obj\Debug\test.Properties.Resources.resources
 E:\Mesh Workspace\VanGoghPOS\test\obj\Debug\test.csproj.GenerateResource.Cache
 E:\Mesh Workspace\VanGoghPOS\test\obj\Debug\test.exe
 E:\Mesh Workspace\VanGoghPOS\test\obj\Debug\test.pdb
+E:\Mesh Workspace\VanGoghPOS\test\bin\Debug\Qiniu.4.0.dll
+E:\Mesh Workspace\VanGoghPOS\test\bin\Debug\Newtonsoft.Json.dll
+E:\Mesh Workspace\VanGoghPOS\test\bin\Debug\Newtonsoft.Json.pdb
+E:\Mesh Workspace\VanGoghPOS\test\bin\Debug\Newtonsoft.Json.xml
