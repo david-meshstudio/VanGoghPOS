@@ -135,6 +135,7 @@ namespace COM.MeshStudio.Lib.BasicComponent
 
         public class MClientSocket
         {
+            private IPEndPoint serverEP;
             public Socket socket;
             public delegate void ReceiveCallBack(string message);
             public ReceiveCallBack receiveCallBack;
@@ -142,16 +143,31 @@ namespace COM.MeshStudio.Lib.BasicComponent
 
             public void Connect(string ip, int port)
             {
-                socket.BeginConnect(new IPEndPoint(IPAddress.Parse(ip), port), new AsyncCallback(OnConnectResponse), socket);
+                try
+                {
+                    serverEP = new IPEndPoint(IPAddress.Parse(ip), port);
+                    socket.BeginConnect(serverEP, new AsyncCallback(OnConnectResponse), socket);
+                }
+                catch(Exception exp)
+                {
+
+                }
             }
 
             private void OnConnectResponse(IAsyncResult ar)
             {
                 Socket socket = (Socket)ar.AsyncState;
-                socket.EndConnect(ar);
-                StateObject state = new StateObject();
-                state.socket = socket;
-                socket.BeginReceive(state.buffers, SocketFlags.None, new AsyncCallback(ReceiveMessage), state);
+                if (socket.Connected)
+                {
+                    socket.EndConnect(ar);
+                    StateObject state = new StateObject();
+                    state.socket = socket;
+                    socket.BeginReceive(state.buffers, SocketFlags.None, new AsyncCallback(ReceiveMessage), state);
+                }
+                else
+                {
+                    socket.BeginConnect(this.serverEP, new AsyncCallback(OnConnectResponse), socket);
+                }
             }
 
             private void ReceiveMessage(IAsyncResult ar)
