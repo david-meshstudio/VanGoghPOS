@@ -17,6 +17,7 @@ namespace test
     {
         private MWorker mworker;
         private SocketTool.MServerSocket server;
+        HttpServer httpserver = new HttpServer();
 
         public Form2()
         {
@@ -114,6 +115,22 @@ namespace test
             openFileDialog1.ShowDialog();
             string fileName = openFileDialog1.FileName;
             MessageBox.Show(FileAdaptor.ReadFile(fileName));
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            httpserver.getResponse = GetResponse;
+            httpserver.Start();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            httpserver.Stop();
+        }
+
+        private string GetResponse(string path, string query)
+        {
+            return path + "," + query;
         }
     }
 }
