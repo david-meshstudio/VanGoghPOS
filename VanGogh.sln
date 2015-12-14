@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataObject", "DataObject\Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIComponent", "UIComponent\UIComponent.csproj", "{FE23879E-3BA8-416E-9220-6C6C36BAFEA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardwareLibrary", "HardwareLibrary\HardwareLibrary.csproj", "{F7114C72-6764-4ABB-9D2C-E2D7E3FDDAF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleEngine", "RuleEngine\RuleEngine.csproj", "{BA28ACA2-C727-4D36-8191-318A08D34D66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,14 @@ Global
 		{FE23879E-3BA8-416E-9220-6C6C36BAFEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE23879E-3BA8-416E-9220-6C6C36BAFEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE23879E-3BA8-416E-9220-6C6C36BAFEA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7114C72-6764-4ABB-9D2C-E2D7E3FDDAF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7114C72-6764-4ABB-9D2C-E2D7E3FDDAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7114C72-6764-4ABB-9D2C-E2D7E3FDDAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7114C72-6764-4ABB-9D2C-E2D7E3FDDAF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA28ACA2-C727-4D36-8191-318A08D34D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA28ACA2-C727-4D36-8191-318A08D34D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA28ACA2-C727-4D36-8191-318A08D34D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA28ACA2-C727-4D36-8191-318A08D34D66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

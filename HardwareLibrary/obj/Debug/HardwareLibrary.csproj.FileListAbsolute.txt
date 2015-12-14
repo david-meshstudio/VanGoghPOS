@@ -1,0 +1,61 @@
+E:\PROJECT\HESTIA\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.dll
+E:\PROJECT\HESTIA\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.pdb
+E:\PROJECT\HESTIA\POSExpert\HardwareLibrary\bin\Debug\BasicComponents.dll
+E:\PROJECT\HESTIA\POSExpert\HardwareLibrary\bin\Debug\EntityLibrary.dll
+E:\PROJECT\HESTIA\POSExpert\HardwareLibrary\bin\Debug\BasicComponents.pdb
+E:\PROJECT\HESTIA\POSExpert\HardwareLibrary\bin\Debug\EntityLibrary.pdb
+E:\PROJECT\HESTIA\POSExpert\HardwareLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\PROJECT\HESTIA\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.dll
+E:\PROJECT\HESTIA\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.pdb
+F:\Projects\Hestia\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.dll
+F:\Projects\Hestia\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.pdb
+F:\Projects\Hestia\POSExpert\HardwareLibrary\bin\Debug\BasicComponents.dll
+F:\Projects\Hestia\POSExpert\HardwareLibrary\bin\Debug\EntityLibrary.dll
+F:\Projects\Hestia\POSExpert\HardwareLibrary\bin\Debug\BasicComponents.pdb
+F:\Projects\Hestia\POSExpert\HardwareLibrary\bin\Debug\EntityLibrary.pdb
+F:\Projects\Hestia\POSExpert\HardwareLibrary\obj\Debug\ResolveAssemblyReference.cache
+F:\Projects\Hestia\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.dll
+F:\Projects\Hestia\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.pdb
+C:\Users\think\Desktop\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.dll
+C:\Users\think\Desktop\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.pdb
+C:\Users\think\Desktop\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\BasicComponents.dll
+C:\Users\think\Desktop\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\EntityLibrary.dll
+C:\Users\think\Desktop\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\BasicComponents.pdb
+C:\Users\think\Desktop\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\EntityLibrary.pdb
+C:\Users\think\Desktop\前台\Hestia\POSExpert\HardwareLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\think\Desktop\前台\Hestia\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.dll
+C:\Users\think\Desktop\前台\Hestia\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.pdb
+E:\Hestia Doc\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.dll
+E:\Hestia Doc\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.pdb
+E:\Hestia Doc\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\BasicComponents.dll
+E:\Hestia Doc\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\EntityLibrary.dll
+E:\Hestia Doc\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\BasicComponents.pdb
+E:\Hestia Doc\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\EntityLibrary.pdb
+E:\Hestia Doc\前台\Hestia\POSExpert\HardwareLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\Hestia Doc\前台\Hestia\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.dll
+E:\Hestia Doc\前台\Hestia\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.pdb
+E:\Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.dll
+E:\Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.pdb
+E:\Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\BasicComponents.dll
+E:\Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\EntityLibrary.dll
+E:\Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\BasicComponents.pdb
+E:\Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\EntityLibrary.pdb
+E:\Project\前台\Hestia\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.dll
+E:\Project\前台\Hestia\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.pdb
+E:\Project\前台\Hestia\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.csprojResolveAssemblyReference.cache
+E:\Old-Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.dll
+E:\Old-Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.pdb
+E:\Old-Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\BasicComponents.dll
+E:\Old-Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\EntityLibrary.dll
+E:\Old-Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\BasicComponents.pdb
+E:\Old-Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\EntityLibrary.pdb
+E:\Old-Project\前台\Hestia\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.csprojResolveAssemblyReference.cache
+E:\Old-Project\前台\Hestia\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.dll
+E:\Old-Project\前台\Hestia\POSExpert\HardwareLibrary\obj\Debug\HardwareLibrary.pdb
+E:\Old-Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.dll.CodeAnalysisLog.xml
+E:\Old-Project\前台\Hestia\POSExpert\HardwareLibrary\bin\Debug\HardwareLibrary.dll.lastcodeanalysissucceeded
+E:\Mesh Workspace\VanGoghPOS\HardwareLibrary\bin\Debug\HardwareLibrary.dll
+E:\Mesh Workspace\VanGoghPOS\HardwareLibrary\bin\Debug\HardwareLibrary.pdb
+E:\Mesh Workspace\VanGoghPOS\HardwareLibrary\obj\Debug\HardwareLibrary.csprojResolveAssemblyReference.cache
+E:\Mesh Workspace\VanGoghPOS\HardwareLibrary\obj\Debug\HardwareLibrary.dll
+E:\Mesh Workspace\VanGoghPOS\HardwareLibrary\obj\Debug\HardwareLibrary.pdb

@@ -1,0 +1,26 @@
+﻿<Define>
+<variable c0>CustomerName,20,center
+<variable c1>DateTime,20,left
+<variable c2>CurrentUser,10,left
+<variable c3>Order,4,right
+<variable c4>ProductName,20,left
+<variable c5>Price,10,right
+<variable c6>Number,4,right
+<variable c7>Unit,4,left
+<variable c8>Telephone,16,right
+<variable c9>Table,6,left
+<variable a0>Taste,20,left
+<variable a1>Addition,20,left
+</Define>
+
+<Text>
+<c0>
+<c9>   <c1>
+<c3>:  <c4>
+<a0>         <a1>
+       <c5>元  共<c6><c7>
+外送專線：<c8>
+</Text>
+
+
+

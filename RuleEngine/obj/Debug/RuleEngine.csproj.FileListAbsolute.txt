@@ -1,0 +1,2 @@
+E:\Project\RuleEngine\RuleEngine\obj\Debug\ResolveAssemblyReference.cache
+E:\Mesh Workspace\VanGoghPOS\RuleEngine\obj\Debug\RuleEngine.csprojResolveAssemblyReference.cache

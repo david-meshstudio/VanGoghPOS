@@ -59,6 +59,7 @@
     <Compile Include="HttpServer.cs" />
     <Compile Include="JsonTool.cs" />
     <Compile Include="LogTool.cs" />
+    <Compile Include="PrintTemplateExplainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SocketTool.cs" />
     <Compile Include="WinMessageTool.cs" />

@@ -1,0 +1,9 @@
+E:\Project\Hestia\POSExpert\HardwareLibrary\bin\Release\HardwareLibrary.dll
+E:\Project\Hestia\POSExpert\HardwareLibrary\bin\Release\HardwareLibrary.pdb
+E:\Project\Hestia\POSExpert\HardwareLibrary\bin\Release\BasicComponents.dll
+E:\Project\Hestia\POSExpert\HardwareLibrary\bin\Release\EntityLibrary.dll
+E:\Project\Hestia\POSExpert\HardwareLibrary\bin\Release\BasicComponents.pdb
+E:\Project\Hestia\POSExpert\HardwareLibrary\bin\Release\EntityLibrary.pdb
+E:\Project\Hestia\POSExpert\HardwareLibrary\obj\Release\ResolveAssemblyReference.cache
+E:\Project\Hestia\POSExpert\HardwareLibrary\obj\Release\HardwareLibrary.dll
+E:\Project\Hestia\POSExpert\HardwareLibrary\obj\Release\HardwareLibrary.pdb
